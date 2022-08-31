@@ -66,14 +66,14 @@ function krischan_render_article_metabox( $post ){
 	$vars['post'] = $post;
 	
 	if(empty($post->post_name)){
-		$vars['journal_id'] = '';
-		$vars['volume'] = '';
-		$vars['number'] = '';
+		$vars['issue_id'] = '';
+		$vars['authors'] = '';
+		$vars['pdf'] = '';
 	} else {
-		$custom_fields = krischan_get_post_meta($post->ID, '_krischan_settings_journal');
-		$vars['journal_id'] = $custom_fields['journal_id'];
-		$vars['volume'] = $custom_fields['volume'];
-		$vars['number'] = $custom_fields['number'];
+		$custom_fields = krischan_get_post_meta($post->ID, '_krischan_settings_article');
+		$vars['issue_id'] = $custom_fields['issue_id'];
+		$vars['authors'] = $custom_fields['authors'];
+		$vars['pdf'] = $custom_fields['pdf'];
 	}
 	
 	// print_r($vars);
@@ -119,11 +119,11 @@ function krischan_save_post_hook_article( $post_id ){
 	remove_action( "save_post_article", 'krischan_save_post_hook_article' );
 	// Update info
 	
-	$_krischan_settings_issue['journal_id'] = isset($post['krischan_issue_journal_id']) ? $post['krischan_issue_journal_id'] : "";
-	$_krischan_settings_issue['volume'] = isset($post['krischan_issue_volume']) ? $post['krischan_issue_volume'] : "";
-	$_krischan_settings_issue['number'] = isset($post['krischan_issue_number']) ? $post['krischan_issue_number'] : "";
+	$_krischan_settings_article['issue_id'] = isset($post['krischan_article_issue_id']) ? $post['krischan_article_issue_id'] : "";
+	$_krischan_settings_article['authors'] = isset($post['krischan_article_authors']) ? $post['krischan_article_authors'] : "";
+	$_krischan_settings_article['pdf'] = isset($post['krischan_article_pdf']) ? $post['krischan_article_pdf'] : "";
 
-	update_post_meta($post_id, '_krischan_settings_issue', $_krischan_settings_issue);
+	update_post_meta($post_id, '_krischan_settings_article', $_krischan_settings_article);
 	
 	// Add save hook
 	add_action( "save_post_article", 'krischan_save_post_hook_article' );
