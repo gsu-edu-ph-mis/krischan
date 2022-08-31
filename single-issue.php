@@ -69,7 +69,7 @@ get_header(); ?>
 							?>
 								<?php $article_meta = (krischan_get_post_meta($article->ID, '_krischan_settings_article')); ?>
 								<div class="mb-4">
-									<div class="mb-1 d-flex"><div class="h3 mr-1"><?= $key + 1; ?></div> <h2 class="h3"><a href="<?php echo get_permalink( $article->ID); ?>"><?php echo $article->post_title; ?></a></h2></div>
+									<div class="mb-1 d-flex"><div class="h3 mr-2"><?= $key + 1; ?></div> <h2 class="h3"><a href="<?php echo get_permalink( $article->ID); ?>"><?php echo $article->post_title; ?></a></h2></div>
 									<p class="pl-4 font-italic" rel="author"><?= $article_meta['authors']; ?></p>
 								</div>
 							<?php 
