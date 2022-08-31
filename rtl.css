@@ -1,0 +1,214 @@
+/*
+Theme Name: krischan
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+See: https://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+.entry-header > span {
+	margin-left: 15px;
+}
+
+/* Pagination */
+.pagination .prev {
+	float: right;
+}
+.pagination .next {
+	float: left;
+}
+
+/* Post navigation */
+.post-navigation .nav-previous {
+	float: right;
+}
+.post-navigation .nav-next {
+	float: left;
+}
+.post-navigation .nav-next {
+	text-align: left;
+}
+
+/* Tables */
+caption,
+th,
+td {
+	text-align: right;
+}
+
+/* Container */
+.container {
+	text-align: right;
+}
+
+/* Nav overall styles */
+.nav {
+	text-align: right;
+}
+
+/* Expander */
+.menu-expander {
+	left: 0;
+	right: auto;
+	top: 0;
+}
+
+/* Site content */
+.site-content {
+	text-align: right;
+}
+
+/* Post meta */
+.post-meta > * {
+	float: right;
+	margin-left: 22px;
+	margin-right: 0;
+}
+
+/* WordPress core styles */
+.alignright {
+	float:left;
+	margin: 5px 20px 20px 0;
+}
+.alignleft {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignright {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignnone {
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignleft {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption.alignnone {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption.alignright {
+	margin: 5px 20px 20px 0px;
+}
+
+/* WordPress comment */
+.comment-list .children {
+	padding-right: 40px;
+    padding-left: 0;
+}
+.comment-list .comment{
+	margin-bottom: 25px;
+}
+.comment-meta .avatar{
+	float: right;
+}
+
+
+/* Responsive Breakouts */
+/* >= 800px */
+@media ( min-width: 800px ) {
+	/* Site branding */
+	.site-branding {
+		float: right;
+		text-align: right;
+	}
+
+	/* Nav overall styles */
+	.nav .menu-item-has-children > a {
+		padding-left: 25px;
+	}
+
+	/* 1st level menu */
+	.nav > ul > li {
+		float: right;
+	}
+	.nav > ul > li:last-child > a {
+		padding-left: 0;
+	}
+
+	/* Expander */
+	.menu-expander {
+		left: 0;
+        right: auto;
+	}
+	.sub-menu .menu-expander:after {
+		/* Left arrow */
+		border-color: transparent #777;
+		border-style: solid;
+		border-width: 5px 5px 5px 0;
+
+	}
+	.sub-menu > .menu-show > .menu-expander:after{
+		/* Right arrow */
+		border-color: transparent #777;
+		border-style: solid;
+		border-width: 5px 0 5px 5px;
+	}
+
+	/* Nav sub menus */
+	.nav .sub-menu {
+		right: 0;
+        text-align: right;
+	}
+
+	/* Nav 2nd level menus */
+	.nav .sub-menu .sub-menu {
+		right: 100%;
+        left: auto;
+	}
+	.nav > ul > li .sub-menu a{
+		padding-right: 15px;
+        padding-left: inherit;
+        text-align: right;
+	}
+	.nav > ul > li .sub-menu .sub-menu a{
+        padding-right: 15px;
+        padding-left: inherit;
+	}
+	.nav > ul > li .sub-menu .sub-menu .sub-menu a{
+        padding-right: 15px;
+        padding-left: inherit;
+	}
+
+	/* Nav main */
+	.nav-main {
+		float: left;
+	}
+
+	/* Content area */
+	.content-area {
+		float: right;
+	}
+
+	/* Search form */
+	.search-form .search-field{
+		padding-left: 14px;
+		padding-right: 30px;
+	}
+	.search-submit {
+		right: 0;
+		left: auto;
+	}
+
+	/* Sidebar */
+	.sidebar {
+		float: left;
+	}
+
+	/* Footer */
+	.footer .container {
+		text-align: right;
+	}
+}
+
