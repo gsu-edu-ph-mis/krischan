@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <p>Copyright &copy; 2022. Center for Journal Publications. All Rights Reserved. </p>
-                <p>Guimaras State College</p>
+                <p>Guimaras State University</p>
             </div>
         </div>
     </div>
