@@ -48,34 +48,20 @@ get_header(); ?>
 						</div>
 						<div class="col-md-9">
 							<h2 class="h2 mb-4 text-center text-md-left">Articles</h2>
-							<div class="articles pl-0 pl-md-5">
+							<ol class="articles pl-0 pl-md-5">
 							<?php 
-							$args = array(
-								'post_type' => 'article',
-								'post_status' => array('publish'), // As long as it exist, get it
-								'numberposts' => -1, // Get all
-								'order' => 'ASC',
-								'orderby' => 'date',
-								'meta_query' => array(
-									array(
-										'key'       => '_krischan_settings_article',
-										'value'     => '"' . $post->post_name . '"',
-										'compare'   => 'LIKE'
-									)
-								)
-							);
-							$issue_articles   = get_posts( $args ); // Returns array 
-							foreach($issue_articles as $key=>$article):
+							$issue_articles = krischan_get_articles_by_issue_slug($post->post_name);
+							foreach($issue_articles as $article):
 							?>
 								<?php $article_meta = (krischan_get_post_meta($article->ID, '_krischan_settings_article')); ?>
-								<div class="mb-4">
-									<div class="mb-1 d-flex"><div class="h3 mr-2"><?= $key + 1; ?></div> <h2 class="h3"><a href="<?php echo get_permalink( $article->ID); ?>"><?php echo $article->post_title; ?></a></h2></div>
-									<p class="pl-4 font-italic" rel="author"><?= $article_meta['authors']; ?></p>
-								</div>
+								<li class="mb-4">
+									<h2 class="h3"><a href="<?php echo get_permalink( $article->ID); ?>"><?php echo $article->post_title; ?></a></h2>
+									<p class="pl-1 font-italic" rel="author"><?= $article_meta['authors']; ?></p>
+								</li>
 							<?php 
 							endforeach; 
 							?>
-							</div>
+							</ol>
 
 							<hr>
 							<?php the_content(); ?>

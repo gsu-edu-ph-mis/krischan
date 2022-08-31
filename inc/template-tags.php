@@ -252,3 +252,21 @@ function krischan_top_nav_cb( $args ){
 	$markup = '';
 	return $markup;
 }
+
+function krischan_get_articles_by_issue_slug( $issue_slug ){
+	$args = array(
+		'post_type' => 'article',
+		'post_status' => array('publish'), // As long as it exist, get it
+		'numberposts' => -1, // Get all
+		'order' => 'ASC',
+		'orderby' => 'date',
+		'meta_query' => array(
+			array(
+				'key'       => '_krischan_settings_article',
+				'value'     => '"' . $issue_slug . '"',
+				'compare'   => 'LIKE'
+			)
+		)
+	);
+	return get_posts( $args ); // Returns array 
+}
