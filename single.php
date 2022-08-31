@@ -10,7 +10,7 @@
 get_header(); ?>
 <div class="site-content container">
 	<div class="form-row">
-		<main id="main" class="site-main col-md-9 text-left" role="main">asdasddasdasdasdsada
+		<main id="main" class="site-main col-md-9 text-left" role="main">
 			<?php
 			// Start the loop.
 			while ( have_posts() ) : the_post();
