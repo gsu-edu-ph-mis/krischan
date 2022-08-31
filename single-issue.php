@@ -54,6 +54,8 @@ get_header(); ?>
 								'post_type' => 'article',
 								'post_status' => array('publish'), // As long as it exist, get it
 								'numberposts' => -1, // Get all
+								'order' => 'ASC',
+								'orderby' => 'date',
 								'meta_query' => array(
 									array(
 										'key'       => '_krischan_settings_article',
