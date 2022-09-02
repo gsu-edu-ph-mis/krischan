@@ -12,12 +12,12 @@
         <div class="row">
             <div class="col-md-4 mb-5 mb-md-0">
                 <h3 class="h3 mb-3">About Us</h3>
-                <p>The Center for Journal Publications undertakes the publication of the institutional research journals, namely, Himal-Us, Higher Education Research Review (HERR), and The Graduate School Journal.  </p>
+                <p>The Center for Journal Publications undertakes the publication of the institutional research journals, namely, Himal-us, Higher Education Research Review (HERR), and The Graduate School Journal.  </p>
             </div>
             <div class="col-md-4 mb-5 mb-md-0">
                 <h3 class="h3 mb-3">Links</h3>
                 <ul class="pl-4">
-					<li><a href="<?php echo get_permalink( get_page_by_path( 'himal-us' ) ) ?>">Himal-Us</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'himal-us' ) ) ?>">Himal-us</a></li>
 					<li><a href="<?php echo get_permalink( get_page_by_path( 'the-graduate-school-journal' ) ) ?>">The Graduate School Journal</a></li>
 					<li><a href="<?php echo get_permalink( get_page_by_path( 'higher-education-research-review' ) ) ?>">Higher Education Research Review</a></li>
 				</ul>
@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <p>Copyright &copy; 2022. Center for Journal Publications. All Rights Reserved. </p>
-                <p>Guimaras State University</p>
+                <p><a class="text-white" href="https://www.gsu.edu.ph">Guimaras State University</a></p>
             </div>
         </div>
     </div>
