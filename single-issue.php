@@ -63,8 +63,7 @@ get_header(); ?>
 							?>
 							</ol>
 
-							<hr>
-							<?php the_content(); ?>
+							<?php //the_content(); ?>
 							<?php
 								wp_link_pages( array(
 									'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'krischan' ) . '</span>',
