@@ -62,7 +62,7 @@ get_header(); ?>
 							) );
 						?>
 						
-						<iframe src="<?php echo $article['pdf']; ?>" width="100%" height="600"></iframe>
+						<iframe src="<?php echo $article['pdf']; ?>" width="100%" height="800"></iframe>
 					</div><!-- .entry-content -->
 
 					<?php
