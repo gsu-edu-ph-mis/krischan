@@ -88,7 +88,7 @@ get_header(); ?>
 						<div class="row mb-5">
 							<div class="col-md-12">
 								<h2 class="h1 mb-3">About the Center </h2>
-								<p>The Center for Journal Publications undertakes the publication of the institutional research journals, namely, Himal-Us, Higher Education Research Review (HERR), and The Graduate School Journal. </p>
+								<p>The Center for Journal Publications undertakes the publication of the institutional research journals, namely, Himal-us, Higher Education Research Review (HERR), and The Graduate School Journal. </p>
 								<p>These journals are recognized by the National Library and with respective International Standard Serial Numbers (ISSN). The Himal-us and HERR include quality completed research outputs that satisfactorily complied with the in-house review's rigorous process. </p>
 								<p>On the other hand, the Graduate School Journal enclosed the research articles endorsed by the Graduate School and approved by the editorial board. Further, the center mediates the GSC personnel in complying with the standards for Scopus, Thomson Reuters, Web of Science Indexability, ASEAN, and other reputable citation indexes for possible external journal publications.</p>
 							</div>

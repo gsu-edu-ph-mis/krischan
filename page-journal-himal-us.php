@@ -45,7 +45,7 @@ get_header(); ?>
 							<?php the_content(); ?>
 
 							<h2 class="h3">Editorial Policy</h2>
-							<p>Contributors to the Himal-Us must prepare the publishable articles in accordance with these parameters. These are designed to standardize the process of preparing the journal for publication. Failure to keep on with this reference may culminate in the rejection of the article for publication [...] <br>	<a href="<?= get_permalink(get_page_by_path('himal-us-editorial-policy')); ?>">Read Full Editorial Policy</a></p>
+							<p>Contributors to the Himal-us must prepare the publishable articles in accordance with these parameters. These are designed to standardize the process of preparing the journal for publication. Failure to keep on with this reference may culminate in the rejection of the article for publication [...] <br>	<a href="<?= get_permalink(get_page_by_path('himal-us-editorial-policy')); ?>">Read Full Editorial Policy</a></p>
 							
 							<p class="mb-0"><strong>Editorial Board</strong>: <a href="<?= $journal['editorial_board']; ?>">View</a></p>
 							<p class="mb-0"><strong>Frequency</strong>: <?= $journal['frequency']; ?></p>

@@ -3,7 +3,7 @@
 	<label for="krischan_issue_journal_id"><?php _e('Journal:', 'krischan'); ?> </label>
 	<select name="krischan_issue_journal_id" id="krischan_issue_journal_id">
 		<option value=""></option>
-		<option <?php if($journal_id == 'himal-us'): ?>selected="selected"<?php endif; ?> value="himal-us">Himal-Us</option>
+		<option <?php if($journal_id == 'himal-us'): ?>selected="selected"<?php endif; ?> value="himal-us">Himal-us</option>
 		<option <?php if($journal_id == 'higher-education-research-review'): ?>selected="selected"<?php endif; ?> value="higher-education-research-review">Higher Education Research Review</option>
 		<option <?php if($journal_id == 'the-graduate-school-journal'): ?>selected="selected"<?php endif; ?> value="the-graduate-school-journal">The Graduate School Journal</option>
 	</select>
