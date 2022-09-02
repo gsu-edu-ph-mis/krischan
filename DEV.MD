@@ -5,7 +5,8 @@
 - https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04
 
 
-sudo chown -R www-data:www-data /var/www/cjp/wp-content/themes/krischan
+sudo chown -R ubuntu:www-data /home/ubuntu/cjp/wp-content/themes/krischan
+sudo chown -R www-data:www-data /home/ubuntu/cjp/wp-content
 
 
 `sudo nano /etc/nginx/sites-available/journals.gsu.edu.ph`
