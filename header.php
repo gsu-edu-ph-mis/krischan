@@ -17,13 +17,13 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <?php wp_head(); ?>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBY23D9H47"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WM6Q0QXFMP"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-SBY23D9H47');
+    gtag('config', 'G-WM6Q0QXFMP');
     </script>
 </head>
 
